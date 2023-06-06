@@ -33,12 +33,12 @@ export async function deletePelicula(div,id){
     let del = await(await fetch(`${URL}/peliculas/${id}`,config)).json();
 }
 
-export async function ActualizarPelicula(div,id) {
+export async function ActualizarPelicula(data,id) {
 
     let config = {
         method: 'PUT',
         headers: headers,
-        body:JSON.stringify(div)
+        body:JSON.stringify(data)
     }
 
     let act = await (await fetch(`${URL}/peliculas/${id}`,config)).json();

@@ -61,7 +61,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalModificar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal" id="modalModificar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -69,9 +69,26 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-              <form class="col-12" id="formActualizar">
-                <label>AAAA</label>  
-              </form>
+            <form class="col-12" id="formModificar">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Titulo</label>
+                <input type="text" class="form-control" id="titulo" name="titulo">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Genero</label>
+                <input type="text" class="form-control" id="genero" name="genero">
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Duracion</label>
+                  <input type="text" class="form-control" id="duracion" name="duracion">
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Director</label>
+                  <input type="text" class="form-control" id="duracion" name="duracion">
+              </div>
+                
+              <input type="submit" class="btn btn-info text-light" data-accion="Registrar" value="Registrar">
+            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -79,6 +96,7 @@
         </div>
       </div>
   </div>
-
+    
+    
 </body>
 </html>

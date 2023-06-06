@@ -1,6 +1,9 @@
 {
   "peliculas": [
     {
+      "titulo": "XD",
+      "genero": "xd",
+      "duracion": "xd",
       "id": 2
     }
   ]

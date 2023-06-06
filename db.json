@@ -1,0 +1,16 @@
+{
+  "peliculas": [
+    {
+      "titulo": "Hola",
+      "genero": "No se",
+      "duracion": "Tampoco se",
+      "id": 1
+    },
+    {
+      "titulo": "Hola2",
+      "genero": "No se2",
+      "duracion": "Tampoco se2",
+      "id": 2
+    }
+  ]
+}

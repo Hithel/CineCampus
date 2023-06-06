@@ -20,9 +20,9 @@ export async function postPelicula(data){
 
 }
 
-export async function deletePelicula(tr,id){
+export async function deletePelicula(div,id){
 
-    let data = Object.fromEntries(new FormData(tr.target));
+    let data = Object.fromEntries(new FormData(div.target));
 
     let config = {
         method: 'DELETE',
@@ -33,12 +33,12 @@ export async function deletePelicula(tr,id){
     let del = await(await fetch(`${URL}/peliculas/${id}`,config)).json();
 }
 
-export async function ActualizarPelicula(data,id) {
+export async function ActualizarPelicula(div,id) {
 
     let config = {
         method: 'PUT',
         headers: headers,
-        body:JSON.stringify(data)
+        body:JSON.stringify(div)
     }
 
     let act = await (await fetch(`${URL}/peliculas/${id}`,config)).json();

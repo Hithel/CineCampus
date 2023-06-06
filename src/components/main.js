@@ -1,4 +1,4 @@
-import {postPelicula,getPelicula,deletePelicula} from "./peticiones.js";
+import {postPelicula,getPelicula,deletePelicula,ActualizarPelicula} from "./peticiones.js";
 
 let form = document.querySelector('#form');
 let DivPelicula = document.querySelector('#DivPelicula');
@@ -17,13 +17,15 @@ DivPelicula.addEventListener('click', (e)=>{
     
     let div = e.target.closest('div');
     let id = div.id
-    let accion = e.target.dataset.accion;
 
+    let accion = e.target.dataset.accion
     
-
-    // if (accion === "Eliminar"){
-    //     deletePelicula(id);
-    // }
+    if (accion === "Eliminar"){
+        deletePelicula(div,id);
+    }
+    else if (accion === "Actualizar"){
+        ActualizarPelicula(div,id)
+    }
 
 });
 

@@ -1,10 +1,12 @@
 {
   "peliculas": [
     {
-      "titulo": "XD",
-      "genero": "xd",
-      "duracion": "xd",
-      "id": 2
+      "titulo": "Mario Bros",
+      "genero": "Accion",
+      "duracion": "2h",
+      "director": "Alguien",
+      "imagen": "https://ca-times.brightspotcdn.com/dims4/default/b73f9bc/2147483647/strip/true/crop/2250x1500+248+0/resize/2400x1600!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F59%2F44%2Fc3b3d4104d20a7ca22456d585bb3%2F2530-t2-00070.jpg",
+      "id": 1
     }
   ]
 }
